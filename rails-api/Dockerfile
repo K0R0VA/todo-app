@@ -2,7 +2,7 @@ FROM ruby:2.6.6
 
 WORKDIR /rails-api
 
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile ./
 RUN mkdir -p log && touch log/development.log
 
 RUN gem install bundler
